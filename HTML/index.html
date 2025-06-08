@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daraz Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background-color: #f85606;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .search-bar input {
+      padding: 8px;
+      width: 300px;
+      border: none;
+      border-radius: 4px;
+    }
+    nav {
+      background: #fff;
+      padding: 10px 20px;
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .product {
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+    .product h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+    .product p {
+      color: #f85606;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Daraz</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products...">
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Electronics</a>
+    <a href="#">Fashion</a>
+    <a href="#">Beauty</a>
+    <a href="#">Groceries</a>
+  </nav>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://i.imgur.com/1Y2ZZbn.png" alt="Product 1">
+      <h3>Smartphone X</h3>
+      <p>$199.99</p>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/5zOZ6sO.png" alt="Product 2">
+      <h3>Wireless Headphones</h3>
+      <p>$49.99</p>
+    </div>
+    <div class="product">
+      <img src="https://i.imgur.com/IaURVQp.png" alt="Product 3">
+      <h3>Smart Watch</h3>
+      <p>$79.99</p>
+    </div>
+  </section>
+
+</body>
+</html>
